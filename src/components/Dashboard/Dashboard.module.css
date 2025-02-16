@@ -1,0 +1,172 @@
+.container {
+  display: flex;
+  flex-direction: row; /* 명시적으로 row 설정 */
+  min-height: 100vh;
+  /* background-color: #f9fafb; */
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* 화면에 여백을 추가 */
+  box-sizing: border-box;
+}
+
+.box {
+  display: flex;
+  width: 1380px;
+  height: 85vh;
+  background-color: #faf9f7;
+  border-radius: 30px; /* 모서리 둥글게 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profileImage {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fbbf24;
+  border-radius: 9999px;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "about about"
+    "board visitor"
+    "weather top100";
+  gap: 1.5rem;
+}
+
+.aboutSection {
+  grid-area: about;
+}
+
+.board {
+  grid-area: board;
+}
+
+.visitor {
+  grid-area: visitor;
+}
+
+.weather {
+  grid-area: weather;
+}
+
+.top100 {
+  grid-area: top100;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.cardHeader {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.cardContent {
+  padding: 1rem;
+}
+
+.aboutSection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px; /* 카드 간 간격 조절 */
+}
+
+.leftSection,
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 카드 간 간격 */
+}
+
+.leftSection {
+  flex: 1;
+}
+
+.rightSection {
+  flex: 1;
+}
+
+.aboutContent {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.aboutImage {
+  width: 8rem;
+  height: 8rem;
+  background-color: #fef3c7;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.topGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.topItem {
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.topItemTitle {
+  font-weight: 500;
+  color: #111827;
+}
+
+.topItemNumber {
+  color: #3b82f6;
+}
+
+.weatherInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.weatherIcon {
+  width: 4rem;
+  height: 4rem;
+  background-color: #fbbf24;
+  border-radius: 9999px;
+}
